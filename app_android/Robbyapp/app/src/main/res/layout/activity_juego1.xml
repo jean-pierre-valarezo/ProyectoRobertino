@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainjuego"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white"
+    tools:context=".Juego1">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp" app:layout_constraintEnd_toStartOf="@+id/cara"
+        app:layout_constraintRight_toLeftOf="@+id/cara" android:layout_margin="50dp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:id="@+id/imagen1" android:visibility="invisible"/>
+
+    <TextView app:layout_constraintEnd_toStartOf="@+id/cara"
+        app:layout_constraintRight_toLeftOf="@+id/cara"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:textStyle="bold" android:textColor="#39DCEC"
+        android:layout_height="wrap_content" android:id="@+id/tiempo2" android:visibility="invisible"
+        android:textSize="40dp"  android:layout_margin="10dp" android:text="" android:layout_width="0dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/menucara" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp" app:layout_constraintStart_toEndOf="@+id/cara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_margin="50dp"
+        app:layout_constraintTop_toTopOf="parent" android:id="@+id/imagen2" android:visibility="invisible"/>
+
+    <TextView app:layout_constraintStart_toEndOf="@+id/cara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:textStyle="bold" android:textColor="#39DCEC"
+        android:layout_height="wrap_content" android:id="@+id/tiempo" android:visibility="invisible"
+        android:textSize="40dp"  android:layout_margin="10dp" android:text="" android:layout_width="0dp"/>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:contentDescription="Volver"
+        android:src="@mipmap/retroceder_foreground"
+        android:layout_width="50dp"
+        android:background="#00000000" android:tooltipText="Volver" android:textDirection="locale"
+        android:layout_height="50dp"  android:layout_margin="15dp" app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/puntazos"
+        android:layout_width="wrap_content" android:padding="10dp" app:layout_constraintLeft_toRightOf="@id/volver"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_margin="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Puntos: "
+            app:layout_constraintEnd_toStartOf="@id/puntaje"
+            tools:ignore="MissingConstraints" android:id="@+id/puntos"
+            android:textStyle="bold" android:textColor="#17969A" android:textSize="20dp"/>
+        <TextView
+            android:layout_width="30dp" android:id="@+id/puntaje"
+            android:layout_height="0dp" android:text="0"
+            app:layout_constraintStart_toEndOf="@+id/puntos"
+            tools:ignore="MissingConstraints"
+            android:textStyle="bold" android:textColor="@color/celeste" android:textSize="20dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/fireworks"
+            android:layout_width="900dp"
+            android:layout_height="900dp"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/fireworks"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+            <ImageButton
+            android:id="@+id/repetirAudio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="25dp"
+            android:backgroundTint="#000000"
+            android:tint="#FFFFFF"
+            android:contentDescription="Repetir audio"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+            android:id="@+id/mensajeResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#00C853"
+            android:visibility="gone"
+            android:elevation="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+            
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

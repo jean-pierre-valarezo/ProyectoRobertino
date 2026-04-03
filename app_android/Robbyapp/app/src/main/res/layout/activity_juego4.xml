@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent" android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Juego4">
+
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:contentDescription="Volver"
+        android:src="@mipmap/retroceder_foreground"
+        android:layout_width="50dp"
+        android:background="#00000000" android:tooltipText="Volver" android:textDirection="locale"
+        android:layout_height="50dp"  android:layout_margin="15dp" app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/cara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/menucara"/>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dibujo"
+        android:background="#ffffff"
+        android:id="@+id/layoutpalabra"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text=""
+            android:layout_height="wrap_content" android:id="@+id/palabra"
+            android:textSize="30dp"/>
+    </FrameLayout>
+
+   <TextView
+    android:id="@+id/avisoDibujo"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Dibuja pequeño y al centro"
+    android:textColor="#FF0000"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="#00FFFFFF"
+    android:elevation="20dp"
+    android:padding="6dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toTopOf="@id/dibujo"
+    app:layout_constraintStart_toStartOf="@id/dibujo"
+    app:layout_constraintEnd_toEndOf="@id/dibujo"/>
+
+    <ups.logic.robbyapp.AreaDibujo
+        android:background="#ECECEC"
+        android:id="@+id/dibujo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/cara"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+  <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/fireworks"
+    android:layout_width="900dp"
+    android:layout_height="900dp"
+    android:visibility="gone"
+    android:elevation="20dp"
+    app:lottie_rawRes="@raw/fireworks"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+    android:id="@+id/loading"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:elevation="30dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+   <ImageButton
+    android:id="@+id/repetirAudio"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_margin="15dp"
+    android:backgroundTint="#000000"
+    android:tint="#FFFFFF"
+    android:contentDescription="Repetir audio"
+    android:src="@android:drawable/ic_lock_silent_mode_off"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+   <TextView
+    android:id="@+id/mensajeResultado"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:textColor="#00C853"
+    android:visibility="gone"
+    android:elevation="40dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+# =========================
+# PYTHON / BACKEND
+# =========================
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# MODELOS IA / ARCHIVOS PESADOS
+# =========================
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.pb
+*.tflite
+*.h5
+*.joblib
+*.pickle
+*.pkl
+
+# Si tienes estas carpetas con modelos
+modelos/
+clasificadores/
+
+# =========================
+# ANDROID / GRADLE
+# =========================
+.gradle/
+build/
+**/build/
+.idea/
+local.properties
+captures/
+.cxx/
+.externalNativeBuild/
+
+# APK / AAB generados
+*.apk
+*.aab
+*.ap_
+output.json
+
+# =========================
+# ARCHIVOS DE SISTEMA
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# VS CODE / EDITORES
+# =========================
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# ARCHIVOS TEMPORALES
+# =========================
+*.tmp
+*.temp
+*.bak
+*.old
+
+# =========================
+# ARCHIVOS PESADOS / BACKUPS
+# =========================
+*.zip
+*.rar
+*.7z
+
+# =========================
+# VARIABLES / SECRETOS
+# =========================
+.env
+.env.*
+*.key
+*.pem
+# Credenciales
+*.json

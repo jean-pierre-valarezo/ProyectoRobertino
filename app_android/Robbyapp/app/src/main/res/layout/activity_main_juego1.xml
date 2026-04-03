@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent" android:background="@color/celesteBajo"
+    android:layout_height="match_parent"
+    tools:context=".MainJuego1">
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:contentDescription="Volver"
+        android:src="@mipmap/retroceder_blanco_foreground"
+        android:layout_width="50dp"
+        android:background="#00000000" android:tooltipText="Volver" android:textDirection="locale"
+        android:layout_height="50dp"  android:layout_margin="15dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <Switch
+        android:textOn="6"
+        android:textOff="5"
+        android:textAllCaps="true"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textoedad"
+        android:id="@+id/edad"  android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#00000000" android:tooltipText="Edad"
+        android:layout_height="wrap_content"  android:layout_margin="15dp"
+         app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoedad"
+        app:layout_constraintTop_toBottomOf="@+id/edad"
+        android:text="Edad: 5" app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/botones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="15dp"
+        >
+
+        <!--Primera fila-->
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Animales Acuáticos"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/acuatico"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Animales Aéreos"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/aereo"
+            app:layout_constraintLeft_toRightOf="@id/acuatico"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Animales Terrestres"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/terrestre"
+            app:layout_constraintLeft_toRightOf="@id/aereo"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Transporte acuático"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/tacuatico"
+            app:layout_constraintLeft_toRightOf="@id/terrestre"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Transporte aéreo"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/taereo"
+            app:layout_constraintLeft_toRightOf="@id/tacuatico"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Transporte terrestre"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/tterrestre"
+            app:layout_constraintLeft_toRightOf="@id/taereo"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <!--Segunda fila-->
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Prenda de vestir"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/prendadevestir"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/acuatico"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Comida chatarra"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/comidachatarra"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/aereo"
+            app:layout_constraintLeft_toRightOf="@id/prendadevestir"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Emociones"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/emocion"
+            app:layout_constraintTop_toBottomOf="@id/terrestre"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/comidachatarra"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Frutas"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/frutas"
+            app:layout_constraintTop_toBottomOf="@id/tacuatico"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/emocion"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Higiene"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/higiene"
+            app:layout_constraintTop_toBottomOf="@id/taereo"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/frutas"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.15"
+            android:contentDescription="Instrumento musical"
+            android:layout_height="100dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/instrumentomusical"
+            app:layout_constraintTop_toBottomOf="@id/taereo"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toRightOf="@id/higiene"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="10dp"
+            android:id="@+id/filas"
+            app:layout_constraintTop_toBottomOf="@+id/higiene"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content">
+
+
+            <!--Tercera fila-->
+            <ImageButton
+                android:layout_width="100dp"
+                android:contentDescription="Juguete"
+                android:layout_height="100dp"
+                android:id="@+id/juguete" android:layout_margin="10dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:contentDescription="Número"
+                android:layout_height="100dp" android:visibility="invisible"
+                android:id="@+id/numero" android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/juguete"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:contentDescription="Persona"
+                android:layout_height="100dp"
+                android:id="@+id/persona" android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/juguete"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:contentDescription="Verdura"
+                android:layout_height="100dp"
+                android:id="@+id/verdura"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/persona"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:contentDescription="Colores"
+                android:layout_height="100dp"
+                android:id="@+id/color"
+                android:layout_margin="10dp"
+                app:layout_constraintLeft_toRightOf="@id/verdura"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
