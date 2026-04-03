@@ -4,7 +4,7 @@ Robot educativo/terapéutico basado en inteligencia artificial, visión por comp
 
 ---
 
-## 🧠 Descripción del proyecto
+##  Descripción del proyecto
 
 Robertiño es un sistema educativo interactivo que permite a los niños aprender mediante juegos como:
 
@@ -19,7 +19,7 @@ El celular funciona como la **cabeza del robot**, donde se ejecuta la app y se c
 
 ---
 
-## ⚙️ Arquitectura del sistema
+##  Arquitectura del sistema
 
 ```text
 Celular (App Android)
@@ -35,7 +35,7 @@ Robot (ESP32 / Arduino + HC-05)
 
 ---
 
-## 📱 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 ### Aplicación Android
 - Kotlin
@@ -61,7 +61,7 @@ Robot (ESP32 / Arduino + HC-05)
 
 ---
 
-## 🚀 Instalación del backend
+##  Instalación del backend
 
 ### 1. Crear entorno virtual
 
@@ -95,7 +95,7 @@ Running on http://0.0.0.0:5000
 
 ---
 
-## 🔁 Uso del entorno virtual
+##  Uso del entorno virtual
 
 En caso de:
 
@@ -113,7 +113,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📡 Conexión del sistema
+##  Conexión del sistema
 
 ### 🔹 App ↔ Backend
 
@@ -140,7 +140,7 @@ Celular → WiFi → Backend → Respuesta
 
 ---
 
-## 🧪 Pruebas del backend
+##  Pruebas del backend
 
 Se pueden probar endpoints con herramientas como:
 
@@ -165,7 +165,7 @@ http://10.131.186.2:5000/word
 
 ---
 
-## 🔄 Cambios realizados (versión 3.0)
+##  Cambios realizados (versión 3.0)
 
 ### Backend
 - Corrección de dependencias faltantes  
@@ -197,7 +197,7 @@ http://10.131.186.2:5000/word
 
 ---
 
-## 🧠 Funcionamiento del sistema
+##  Funcionamiento del sistema
 
 1. El usuario interactúa con la app  
 2. La app captura imagen o audio  
@@ -210,7 +210,7 @@ http://10.131.186.2:5000/word
 
 ---
 
-## 🎯 Conclusión
+##  Conclusión
 
 El sistema implementa una arquitectura donde:
 
@@ -230,9 +230,6 @@ Se logró una versión estable, optimizada y funcional (**v3.0**).
 Los modelos de IA y otros archivos pesados no están incluidos en este repositorio.
 
 Descarga:
-[enlace aquí]
+[]
 
-## 👨‍💻 Autor
 
-Proyecto desarrollado en prácticas comunitarias  
-Ingeniería en Ciencias de la Computación
