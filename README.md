@@ -1,4 +1,4 @@
-# 🤖 Robertiño v3.0
+#  Robertiño v3.0
 
 Robot educativo/terapéutico basado en inteligencia artificial, visión por computador y reconocimiento de voz, integrado con una aplicación Android y un robot físico controlado por Bluetooth.
 
@@ -31,7 +31,7 @@ Celular
 Robot (ESP32 / Arduino + HC-05)
 ```
 
-📌 El celular actúa como puente entre el backend y el robot.
+ El celular actúa como puente entre el backend y el robot.
 
 ---
 
@@ -115,7 +115,7 @@ pip install -r requirements.txt
 
 ##  Conexión del sistema
 
-### 🔹 App ↔ Backend
+###  App ↔ Backend
 
 - Conexión por WiFi mediante HTTP  
 - Ejemplo:
@@ -132,7 +132,7 @@ Celular → WiFi → Backend → Respuesta
 
 ---
 
-### 🔹 App ↔ Robot
+###  App ↔ Robot
 
 - Conexión mediante Bluetooth  
 - Dispositivo: **Robertino**  
