@@ -230,6 +230,6 @@ Se logró una versión estable, optimizada y funcional (**v3.0**).
 Los modelos de IA y otros archivos pesados no están incluidos en este repositorio.
 
 Descarga:
-[]
+[https://drive.google.com/drive/folders/1UYVcerrHG2YaxaSC3M6ND53wZPgiwW8M?usp=sharing]
 
 
